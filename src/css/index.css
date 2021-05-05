@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#sidepanel {
+    height: 100vh;
+    background-color: rgb(0,0,0,.1);
+    width: 15vw;
+    margin: 0px;
+}
+
+nav {
+    position: absolute;
+    height: 10vh;
+    padding: 0px;
+    width: 85vw;
+    float: right;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+#brand {
+    height: 65px;
+}
+
+#brand h3 {
+    margin-left: 35%;
+    margin-top: 10%;
+    font-size: relative;
+}
+
+#category {
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-left: 15%;
+}
