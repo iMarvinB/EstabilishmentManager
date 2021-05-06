@@ -1,6 +1,19 @@
-* {
-    margin: 0px;
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.navbar navbar-light bg-light {
+    width: 100vw;
+    margin-left: 100px;
+}
+
+#allandnav{
+    width: 100vw;
     padding: 0px;
+    margin-left: 2px;
 }
 
 #sidepanel {
@@ -25,12 +38,35 @@ nav {
 
 #brand h3 {
     margin-left: 35%;
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: relative;
 }
 
 #category {
-    border-top: 1px solid rgba(0,0,0,.1);
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-top: 3px solid rgba(0,0,0,.1);
+}
+
+#categorycontainer {
+    width: 100%;
+}
+
+#categorycontainer li a{
     margin-left: 15%;
+    max-width: 0px;
+}
+
+#categorycontainer span{
+    float: left;
+    position: absolute;
+}
+
+#display{
+    background-color: cadetblue;
+    padding: 0px;
+    margin: 0px;
+}
+
+#container-nav{
+    padding:0px;
+    margin: 0px;
 }

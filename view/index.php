@@ -10,17 +10,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/alertas.css">
+    <link rel="stylesheet" href="../src/css/canvas.css">
+
 </head>
 
 
 <body>
-    <div class="row">
+    <div class="row" id="allandnav">
 
-        <div class="col-md-12 row">
+        <div class="col-md-12 row" id="allandnav">
 
-          <nav class="navbar navbar-light bg-light">
+          <nav class="navbar navbar-light bg-light" style="width: 100%;">
 
-            <div class="container-fluid" style="padding:0px;margin: 0px;">
+            <div class="container-fluid" div="container-nav">
 
               <a class="navbar-brand" href="#">
 
@@ -44,31 +47,70 @@
               <h3>Home</h1>
             </div>
 
-            
-            <div class="row" id="category">
-              <span>Navegadores</span>
+            <div class="col-md-12" id="categorycontainer">
+              <span>Categoria</span>
               <br>
-              <ul>
-                <li><a href="google.com">Google</a></li>
-                <li><a href="duckduckgo.com">DuckDuckGo</a></li>
-              </ul>
+              <div class="row" id="category">
+                <br>
+                <ul>
+                  <li><a href="google.com">Google</a></li>
+                  <li><a href="duckduckgo.com">DuckDuckGo</a></li>
+                </ul>
+              </div>
             </div>
 
-            <div class="row" id="category">
+            <div class="col-md-12" id="categorycontainer">
               <span>Porno</span>
               <br>
-              <ul>
-                <li><a href="google.com">Google</a></li>
-                <li><a href="duckduckgo.com">DuckDuckGo</a></li>
-              </ul>
-            </div>
+              <div class="row" id="category">
+                <br>
+                <ul>
+                  <li><a href="google.com">Google</a></li>
+                  <li><a href="duckduckgo.com">DuckDuckGo</a></li>
+                </ul>
+              </div>
+          </div>
             
 
           </div>
 
-          <div class="col-md-10">
+          <div class="col-md-10" id="display">
 
-              <h3>AAAAAAAAAAAAAAAA</h3>
+            <?php require('../model/alertas.php')?>
+
+            <div class="row">
+
+
+              <div class="col-md-5">
+
+                <canvas id="chartProgress" width="400" height="250"></canvas>
+
+              </div>
+
+              <div class="col-md-5">
+
+                <canvas id="chartProfit" width="400" height="250"></canvas>
+
+              </div>
+
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-5">
+
+                <canvas id="chartProfit" width="400" height="250"></canvas>
+                
+              </div>
+
+              <div class="col-md-5">
+
+                <canvas id="chartProfit" width="400" height="250"></canvas>
+
+              </div>
+
+            </div>
 
           </div>
 
@@ -79,6 +121,10 @@
 
 
     <!-- Scripts -->
+
+
+
+    <script type="text/javascript" src="../model"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,36 @@
+#divAlertaError {
+    background: rgb(255,92,103);
+    background: linear-gradient(90deg, rgba(255,92,103,1) 15%, rgba(255,5,22,1) 50%, rgba(255,92,103,1) 85%);
+    opacity: 0.8;
+}
+
+#divAlertaSuccess {
+    background: rgb(92,255,97);
+    background: linear-gradient(90deg, rgba(92,255,97,0.5802696078431373) 15%, rgba(5,255,17,1) 50%, rgba(92,255,97,0.5802696078431373) 85%);
+}
+
+#divAlertaWarning {
+    background: rgb(255,194,8);
+    background: linear-gradient(90deg, rgba(255,194,8,0.5998774509803921) 15%, rgba(255,189,5,1) 50%, rgba(255,194,8,0.5998774509803921) 85%);
+}
+
+#divAlertaError {
+    display: none;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+#divAlertaSuccess {
+    display: none;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+#divAlertaWarning {
+    display: none;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
